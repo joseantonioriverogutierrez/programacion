@@ -1,0 +1,16 @@
+// jose antonio rivero.cpp : Defines the entry point for the console application.
+//nombre: josé antonio rivero gutierrez
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+ using namespace std;
+
+void main()
+{
+	cout<<"hola Mundo"<<endl;
+	cout<<"tenga muy buenos dias"<<endl;
+	cout<<"lea con mucha atencion el indice \n"<<"y comience la lectura";
+	getch();
+}
