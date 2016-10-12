@@ -1,0 +1,33 @@
+// joseantoniorivero.cpp : Defines the entry point for the console application.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+
+
+{
+     float S,x;
+	 int N, i, fact, flag;
+	 S=0;  // acumulador de suma
+	 flag=-1;  // inicia la serie en negativo
+     fact=1;  //acumulador de producto
+	 cout<<"ingrese el valor final de la serie: ";
+	 cin>> N;
+	 cout<<"ingrese el valor de x: ";
+	 cin>> x;
+	 cout<<"S=";
+	 for (i=1; i<=N; i=i++)
+	 {
+		 S=S+flag*(pow(x,(2*i-1))/fact);
+		 cout<<flag<<"*"<<x<<"^"<<(2*i-1)<<"/"<<fact<<"+";
+		 fact=fact*(i+1)*(i+1);
+		 flag=flag*-1;
+	 }
+	 cout<<" la sunma es: "<< S;
+	 getch;
+}
